@@ -6,6 +6,7 @@ class Triangle
     @side1 = side1
     @side2 = side2
     @side3 = side3
+    @sides = [side1, side2, side3]
   end
 
   def kind
@@ -17,7 +18,7 @@ class Triangle
 
   def validate_triangle
     #place all the sides into an array and sort the array
-    @sides = [side1, side2, side3].sort
+    sides = [side1, side2, side3].sort
     #raise the error if the lowest # is less than or equal to 0 or if the 2
     #lesser sides are less than or equal to the biggest side
     raise TriangleError if sides[0] <= 0 or sides[0] + sides[1] <= sides[2]
