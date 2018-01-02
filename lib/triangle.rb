@@ -11,8 +11,8 @@ class Triangle
 
   def kind
     validate_triangle
-    return :equilateral if sides[0] == sides[2]
-    return :isosceles if sides[0] == sides[1] or sides[1] == sides[2]
+    return :equilateral if @sides[0] == @sides[2]
+    return :isosceles if @sides[0] == @sides[1] or @sides[1] == @sides[2]
     return :scalene
   end
 
