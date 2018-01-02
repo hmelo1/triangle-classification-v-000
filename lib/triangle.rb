@@ -17,6 +17,10 @@ class Triangle
     return :isosceles if sides[0] == sides[1] or sides[1] == sides[2]
     return :scalene
   end
+
+  def validate_triangle
+
+  end
 end
 
 class TriangleError < StandardError
